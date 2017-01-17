@@ -9,10 +9,15 @@ package Person
 
 
 
-def person = new Person()
-person.age = 25
+//def person = new Person()
+//person.age = 25
+//
+//if (person){
+//    println 'жив!'
+//}
 
-if (person){
-    println 'жив!'
-}
+def list = [new Person("Vasya", 22), new Person("Kolya", 24)]
+list.each {it.age += 10}
+println(list)
+
 
