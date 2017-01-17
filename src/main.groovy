@@ -1,1 +1,3 @@
-println(6/2)
+String str = "Brest.gif"
+str = str[0..-5]
+println(str)
