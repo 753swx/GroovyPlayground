@@ -1,7 +1,5 @@
 package Person
 
-
-
 //Person person = new Person();
 //person.@name = "Artur"
 //
@@ -14,7 +12,7 @@ package Person
 //    println 'жив!'
 //}
 
-List list = [new Person("Vasya", 22), new Person("Kolya", 24), new Person("Masha", 20), new Person("Hanna", 22), new Person("Sveta", 22)]
+List list = [new Person("Vasya", 22), new Person("Kolya", 24), new Person("Masha", 20), new Person("Hanna", 21), new Person("Sveta", 22)]
 
 Person person = new Person("Sveta", 22)
 
@@ -23,11 +21,9 @@ def printNumberOfEntries(List list, Person person, Closure func){
 }
 
 printNumberOfEntries(list, person) {List l, Person p ->
-    def subList = l.findAll {it.name == p.name }
+    def subList = l.findAll {it.age == p.age & it.name == p.name }
     subList.size()
 }
-
-
 
 //list.each {it.age += 10}
 //println(list)
