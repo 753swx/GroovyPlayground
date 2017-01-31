@@ -9,20 +9,20 @@ import java.util.Random;
  * Created by Artur_Kananchuk on 1/24/2017.
  */
 public class MainClass {
-    static void modeGenerator() {
-        Random random = new Random();
-        int indexMode = random.nextInt(2);
-
-//        int indexMode = (int)(Math.random()*2);
-        switch (indexMode) {
-            case 0:
-                System.out.println("0");
-                break;
-            case 1:
-                System.out.println("1");
-                break;
-        }
-    }
+//    static void modeGenerator() {
+//        Random random = new Random();
+//        int indexMode = random.nextInt(2);
+//
+////        int indexMode = (int)(Math.random()*2);
+//        switch (indexMode) {
+//            case 0:
+//                System.out.println("0");
+//                break;
+//            case 1:
+//                System.out.println("1");
+//                break;
+//        }
+//    }
 
     public static void main(String[] args) {
 
